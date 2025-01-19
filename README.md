@@ -22,12 +22,7 @@
   The tool provides a built-in symmetry option.
 
 - **Customizable Brushes**  
-  Tailor your brush to your needs with options for:  
-  - Shape (you can even use your brushes)
-  - Size  
-  - Smoothness  
-  - Opacity  
-  - Repetition
+  Tailor your brush to your needs with the following settings: shape (you can even use your own alphas), size, smoothness, opacity and repetition
 
 - **Output**  
   Choose your desired output texture resolution(up to 4k) and format (PNG and TGA) to suit your project requirements.
