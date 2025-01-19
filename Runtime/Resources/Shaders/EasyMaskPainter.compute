@@ -1,0 +1,71 @@
+#pragma kernel CSMain
+
+RWTexture2D<float4> ResultTexture;
+Texture2D<float4> BrushTexture;
+
+SamplerState linearClampSampler;
+
+float4 HitUV;
+float Radius;
+float4 BrushColor;
+int TargetChannel;
+int SymmetryAxis;
+
+[numthreads(8, 8, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    uint width, height;
+    ResultTexture.GetDimensions(width, height);
+
+    float2 uv = id.xy / float2(width, height);
+
+    float dst = distance(uv, HitUV.xy);
+    float brushSampleOriginal = 0.0;
+
+    if (dst < Radius)
+    {
+        float2 brushUV = (uv - HitUV.xy) / Radius + 0.5;
+        brushSampleOriginal = BrushTexture.SampleLevel(linearClampSampler, brushUV, 0).r;
+    }
+
+    float brushSampleMirrored = 0.0;
+
+    if (SymmetryAxis != 0)
+    {
+        float dstMirrored = distance(uv, HitUV.zw);
+
+        if (dstMirrored < Radius)
+        {
+            float2 brushUV = (uv - HitUV.zw) / Radius + 0.5;
+            brushSampleMirrored = BrushTexture.SampleLevel(linearClampSampler, brushUV, 0).r;
+        }
+    }
+
+    float combinedBrushSample = max(brushSampleOriginal, brushSampleMirrored);
+
+    if (combinedBrushSample > 0.0)
+    {
+        float4 currentColor = ResultTexture[id.xy];
+        float4 newColor = currentColor;
+
+        switch (TargetChannel)
+        {
+            case 0:
+                newColor = lerp(currentColor, BrushColor, combinedBrushSample);
+                break;
+            case 1:
+                newColor.r = lerp(currentColor.r, BrushColor.r, combinedBrushSample);
+                break;
+            case 2:
+                newColor.g = lerp(currentColor.g, BrushColor.g, combinedBrushSample);
+                break;
+            case 3:
+                newColor.b = lerp(currentColor.b, BrushColor.b, combinedBrushSample);
+                break;
+            default:
+                break;
+        }
+
+        ResultTexture[id.xy] = newColor;
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "nrexha.easymask",
+  "version": "1.0.0",
+  "displayName": "Easy Mask",
+  "description": "Easy Mask allows you too create masks in Editor for your models",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://example.com/",
+  "changelogUrl": "https://example.com/changelog.html",
+  "licensesUrl": "https://example.com/licensing.html",
+  "keywords": [
+    "Mask",
+    "Easy",
+    "Paint"
+  ],
+  "author": {
+    "name": "NRexha",
+    "email": "nikolas.rexha@gmail.com",
+    "url": "https://www.unity3d.com"
+  }
+}
