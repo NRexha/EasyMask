@@ -25,7 +25,7 @@
   Choose your desired output texture resolution(up to 4k) and format (PNG and TGA) to suit your project requirements.
 
 ## Controls
-- You can use ytour brush by holding the left mouse button
+- You can use your brush by holding the left mouse button
 - You can switch between brush/eraser
 - You can add a symmetry point on your model with the right mouse button
 
