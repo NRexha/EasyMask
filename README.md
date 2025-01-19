@@ -40,7 +40,7 @@
 - You can add a symmetry point on your model with the right mouse button
 
 ## License
-You can download this tool and make whatever you want with it. The goal is to keep it be free for everyone, so please don't sell it (I would even be surprised that someone would buy it, but still).
+You can download this tool and make whatever you want with it. The goal is to keep it available for everyone, so please don't sell it (I would be surprised that someone would actually buy it, but still).
 
 Happy painting! 
 
