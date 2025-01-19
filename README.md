@@ -28,7 +28,8 @@
   Choose your desired output texture resolution(up to 4k) and format (PNG and TGA) to suit your project requirements.
   
 ## How to use
-[![Easy Mask Demo](https://github.com/user-attachments/assets/8f7a9052-3cf3-4b9e-80e5-54cb6e17ddb0)](https://www.youtube.com/watch?v=2KndpkIZ50A) 
+https://github.com/user-attachments/assets/0ffd1d37-f8cd-41f2-99e7-a61eaabb222d
+
 ### Basic Controls
 - You can use your brush by holding the left mouse button
 - You can switch between brush/eraser
