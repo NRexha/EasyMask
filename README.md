@@ -1,5 +1,4 @@
 # Easy Mask
-
 **Easy Mask** is a Unity tool designed to streamline the process of painting directly on 3D models in editor and save your ourpur in a texture.
 
 ## Installation
@@ -13,7 +12,6 @@
 ![image](https://github.com/user-attachments/assets/3528191a-8f8e-416d-87df-0167b3c5e9ed)
 
 ## Features
-
 - **Paint on Any Model**  
   Paint directly onto 3D models in the Unity Editor, the only requirement is them having a mesh renderer attached of course.
 
@@ -35,9 +33,7 @@
   Choose your desired output texture resolution(up to 4k) and format (PNG and TGA) to suit your project requirements.
 
 ## How to use
-### Demo
-[![Easy Mask Demo](https://img.youtube.com/vi/2KndpkIZ50A/0.jpg)](https://youtu.be/2KndpkIZ50A)
-
+[![Easy Mask Demo](https://github.com/user-attachments/assets/ba39b751-ce92-4b25-8849-a86b52a3e47d)](https://www.youtube.com/watch?v=2KndpkIZ50A) 
 ### Basic Controls
 - You can use your brush by holding the left mouse button
 - You can switch between brush/eraser
