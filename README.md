@@ -3,7 +3,7 @@
   
 ## Installation
 1. Copy the git url of this repository
-![copy_link_tutorial](https://github.com/user-attachments/assets/55d4ea42-640f-4992-b701-319abebdd7b5)
+![image](https://github.com/user-attachments/assets/8f295f7a-f391-4915-9763-dbe33acc0e5f)
 
 2. In Unity, install the package by pasting the git url
 ![install_tutorial](https://github.com/user-attachments/assets/918cd466-6a7f-40eb-a182-d30b0b93f102)
