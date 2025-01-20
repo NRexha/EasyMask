@@ -11,7 +11,11 @@
 3. You can now open the tool by going under Tools/Easy Mask
 ![image](https://github.com/user-attachments/assets/3528191a-8f8e-416d-87df-0167b3c5e9ed)
 
-## Features
+## Overview
+The tool runs smoothly thanks to the use of a compute shader. Most of the heavy logic is run on the gpu, guaranteeing more than 200fps while painting even in low end setups.
+![overview](https://github.com/user-attachments/assets/d48887f4-1bc1-46a2-9095-0082305d6046)
+
+
 - **Paint on Any Model**  
   Paint directly onto 3D models in the Unity Editor, the only requirement is them having a mesh renderer attached of course.
 
@@ -26,6 +30,8 @@
 
 - **Output**  
   Choose your desired output texture resolution(up to 4k) and format (PNG and TGA) to suit your project requirements.
+ 
+
   
 ## How to use
 https://github.com/user-attachments/assets/0ffd1d37-f8cd-41f2-99e7-a61eaabb222d
