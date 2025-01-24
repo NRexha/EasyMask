@@ -1,6 +1,9 @@
 # Easy Mask
 **Easy Mask** is a free Unity package I created that allows you to paint on your models directly in the editor, eliminating the need to switch to external software just to create masks. You can watch the demo video or read the explanatios below to see how it works!
 
+## Demo
+https://github.com/user-attachments/assets/0ffd1d37-f8cd-41f2-99e7-a61eaabb222d
+
 ## Installation
 1. Copy the git url of this repository
 ![image](https://github.com/user-attachments/assets/8f295f7a-f391-4915-9763-dbe33acc0e5f)
@@ -31,12 +34,7 @@ The tool runs smoothly thanks to the use of a compute shader. Most of the heavy 
 - **Output**  
   Choose your desired output texture resolution(up to 4k) and format (PNG and TGA) to suit your project requirements.
  
-
-  
-## How to use
-https://github.com/user-attachments/assets/0ffd1d37-f8cd-41f2-99e7-a61eaabb222d
-
-### Basic Controls
+## Basic Controls
 - You can use your brush by holding the left mouse button
 - You can switch between brush/eraser
 - You can add a symmetry point on your model with the right mouse button
